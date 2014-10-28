@@ -40,4 +40,4 @@ Be sure to understand and practice all beginner notebooks before going to advanc
 
 ## Authors
 
-Alexandre Beelen, Benjamin Bertincourt, Karin Dassas.
+Alexandre Beelen, Benjamin Bertincourt, Alexandre Boucaud, Karin Dassas.
