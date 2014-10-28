@@ -25,6 +25,7 @@ And then launch the notebook with
 ## Organization
 
 The notebooks are divided into two categories
+
 1. Start
   1. Basic Python
   2. Numpy
