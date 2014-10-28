@@ -13,10 +13,10 @@ http://ipython.org/install.html
 
 You will also need several python librairies : 
 
-numpy      : http://docs.scipy.org/doc/numpy/user/install.html
-matplotlib : http://matplotlib.org/1.3.1/users/installing.html
-astropy    : http://docs.astropy.org/en/stable/install.html
-healpy     : https://healpy.readthedocs.org/en/latest/install.html
+- numpy      : http://docs.scipy.org/doc/numpy/user/install.html
+- matplotlib : http://matplotlib.org/1.3.1/users/installing.html
+- astropy    : http://docs.astropy.org/en/stable/install.html
+- healpy     : https://healpy.readthedocs.org/en/latest/install.html
 
 And then launch the notebook with 
 
