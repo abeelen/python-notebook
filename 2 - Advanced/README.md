@@ -1,6 +1,6 @@
 # To do
-- [x] pytest
-     * Install
+- [x] Testing
+     * Install pyTest ?
 - [] scipy
 - [] mayavi
 - [] ipython
