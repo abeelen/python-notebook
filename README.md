@@ -52,9 +52,10 @@ The notebooks are divided into two categories
   5. Healpy
   6. Optimization
 
-2. Advance
+2. Advanced
+  1. Testing
 
-Be sure to understand and practice all beginner notebooks before going to advance.
+Be sure to understand and practice all beginner notebooks before going to advanced.
 
 ## Authors
 
