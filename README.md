@@ -18,6 +18,14 @@ You will also need several python librairies :
 - astropy    : http://docs.astropy.org/en/stable/install.html
 - healpy     : https://healpy.readthedocs.org/en/latest/install.html
 
+All those packages can be installed using pip like
+> pip install --no-deps healpy
+
+under Debian you can also use system packages 
+> sudo apt-get install ipython-notebook python-pip python-numpy python-matplotlib python-astropy
+
+Make sure to have the latest version (especially astropy), we will try to keep those notebook updated
+
 And then launch the notebook with 
 
 > ipython notebook --pylab inline
