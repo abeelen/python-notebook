@@ -1,6 +1,9 @@
 # To do
 * [x] Testing
-     - Install instructions for pyTest
+    * [x] doctest
+    * [x] unittest
+    * [x] pytest
+    * [ ] Install instructions for pytest
 * [ ] scipy
 * [ ] mayavi
 * [ ] ipython
