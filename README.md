@@ -28,7 +28,7 @@ Make sure to have the latest version (especially astropy), we will try to keep t
 
 You can now clone the notebooks with git and use them
 
-> git clone https://git.ias.u-psud.fr/abeelen/python-notebook
+> git clone https://git.ias.u-psud.fr/abeelen/python-notebook.git
 
 > cd python-notebook
 
