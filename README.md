@@ -26,9 +26,14 @@ under Debian you can also use system packages
 
 Make sure to have the latest version (especially astropy), we will try to keep those notebook updated
 
-And then launch the notebook with 
+You can now clone the notebooks with git and use them
+
+> git clone https://git.ias.u-psud.fr/abeelen/python-notebook
+
+> cd python-notebook
 
 > ipython notebook --pylab inline
+
 
 ## Organization
 
