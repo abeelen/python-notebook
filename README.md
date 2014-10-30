@@ -37,7 +37,7 @@ You can now clone the notebook with git and use them
 
 > cd python-notebook
 
-> ipython notebook --pylab inline
+> ipython notebook
 
 
 ## Organization
