@@ -54,6 +54,9 @@ The notebooks are divided into two categories
 
 2. Advanced
   1. Testing
+  2. Advanced Python
+  3. Classes
+  4. Curve Fitting
 
 Be sure to understand and practice all beginner notebooks before going to advanced.
 
