@@ -15,23 +15,23 @@ and the version of the program can be retrieved using `python --version`.
 The default version is usually the system one and is not easily tunable.
 For scientific purposes it is better to start with a clean install, or use dedicated versions (Anaconda, Canopy) bundled with all the major scientific and plotting libraries.
 
-#### Windows
+### Windows
 TBD
 
-#### Linux
+### Linux
 TBD
 
-#### OSX
+### OSX
 
-##### Anaconda
+#### Anaconda
 
 [Main page](https://store.continuum.io/cshop/anaconda/) | [Quick guide (pdf)](https://store.continuum.io/static/img/Anaconda-Quickstart.pdf)
 
-##### Canopy (previously Enthought Python)
+#### Canopy (previously Enthought Python)
 
 [Main page](https://www.enthought.com/products/canopy/)
 
-##### Source
+#### Source
 
 You can get the version of python you want directly from the [official site](https://www.python.org/downloads/) or using a package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
 
@@ -70,7 +70,7 @@ __Tip:__ if you have multiple libraries you need to install, you can list them i
 ----
 
 
-#### Library maintenance
+### Library maintenance
 
 Python libraries are __often__ upgraded.
 
@@ -92,7 +92,7 @@ $ pip install --upgrade pip
 
 While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by python to locate its _libraries_.
 
-##### PATH (for OSX / Linux, Windows should be similar but not covered here)
+### PATH (for OSX / Linux, Windows should be similar but not covered here)
 The python version used by the system is the one that appears __first__ in your `PATH` variable.
 Thus make sure you prepend the path to your (new) python executable to your `.bashrc` as
 
@@ -121,7 +121,7 @@ $ program.py
 
 wherever you are.
 
-##### PYTHONPATH
+### PYTHONPATH
 
 All the libraries installed using pip or your package manager should be symlinked to the right place and made usable directly.
 
