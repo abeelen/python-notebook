@@ -56,7 +56,7 @@ and type in the prompt `quit()`, `exit()` or `Ctrl-D` on your keyboard to exit t
 
 ## Installing libraries/modules
 
-Python is usually delivered with [`pip`](https://pip.pypa.io/en/latest/), a library manager.
+Python is usually delivered with [pip](https://pip.pypa.io/en/latest/), a library manager.
 
 You can use `pip` to install your libraries (`pip3` for python 3.X) , separating them with a space
 ```bash
