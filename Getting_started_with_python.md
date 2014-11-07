@@ -1,10 +1,10 @@
-# Getting Started with python
+# Getting a working Python environment
 
 ## Installation
 
 Python is installed by default on most machines.
 
-The path to the default python executable can be found by running the command-line
+The path to the default Python executable can be found by running the command-line
 `which python` ; e.g.
 ```bash
 $ which python
@@ -33,7 +33,7 @@ TBD
 
 #### Source
 
-You can get the version of python you want directly from the [official site](https://www.python.org/downloads/) or using a package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
+You can get the version of Python you want directly from the [official site](https://www.python.org/downloads/) or using a package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
 
 Example using Homebrew
 ```bash
@@ -41,7 +41,7 @@ $ brew install python   # version 2.7.X
 $ brew install python3  # version 3.X.X
 ```
 
-## Running python
+## Running a Python environment
 
 Enter the program typing `python` in a terminal:
 ```
@@ -90,10 +90,10 @@ $ pip install --upgrade pip
 
 ## PATH and PYTHONPATH
 
-While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by python to locate its _libraries_.
+While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by Python to locate its _libraries_.
 
 ### PATH (for OSX / Linux, Windows should be similar but not covered here)
-The python version used by the system is the one that appears __first__ in your `PATH` variable.
+The Python version used by the system is the one that appears __first__ in your `PATH` variable.
 Thus make sure you prepend the path to your (new) python executable to your `.bashrc` as
 
 ```bash
@@ -123,7 +123,7 @@ wherever you are.
 
 ### PYTHONPATH
 
-All the libraries installed using pip or your package manager should be symlinked to the right place and made usable directly.
+All the libraries installed using `pip` or your package manager should be symlinked to the right place and made usable directly.
 
 For external libraries, installing them with the command `python setup.py install` symlinks them.
 
@@ -133,7 +133,7 @@ However, for your own libraries (even simple scripts), their path needs to be ap
 PYTHONPATH=${PYTHONPATH}:/path/to/your/libraries
 ```
 
-so that you can open python and import them
+so that you can open a Python environment and import them
 ```
 $ python
 Python 2.7.8 (default, Oct 16 2014, 05:18:45)
