@@ -54,9 +54,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 and type in the prompt `quit()`, `exit()` or `Ctrl-D` on your keyboard to exit the program.
 
 
-## Installing libraries
+## Installing libraries/modules
 
-Python is usually delivered with `pip`, a library manager.
+Python is usually delivered with [`pip`](https://pip.pypa.io/en/latest/), a library manager.
 
 You can use `pip` to install your libraries (`pip3` for python 3.X) , separating them with a space
 ```bash
@@ -83,11 +83,16 @@ and then upgrade them
 $ pip install --upgrade scipy numpy matplotlib
 ```
 
+__Tip:__ `pip` is a Python module on its own and has to be updated as well, through the command
+```bash
+$ pip install --upgrade pip
+```
+
 ## PATH and PYTHONPATH
 
 While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by python to locate its _libraries_.
 
-##### PATH
+##### PATH (for OSX / Linux, Windows should be similar but not covered here)
 The python version used by the system is the one that appears __first__ in your `PATH` variable.
 Thus make sure you prepend the path to your (new) python executable to your `.bashrc` as
 
@@ -129,7 +134,7 @@ PYTHONPATH=${PYTHONPATH}:/path/to/your/libraries
 ```
 
 so that you can open python and import them
-```bash
+```
 $ python
 Python 2.7.8 (default, Oct 16 2014, 05:18:45)
 [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.51)] on darwin
