@@ -63,12 +63,11 @@ You can use `pip` to install your libraries (`pip3` for python 3.X) , separating
 $ pip install scipy numpy matplotlib
 ```
 ----
-
 __Tip:__ if you have multiple libraries you need to install, you can list them in a .txt file and have `pip` parse them and install them all at once using the `-r` option, e.g.
-```pip install -r requirements.txt```
-
+```bash
+pip install -r requirements.txt
+```
 ----
-
 
 ### Library maintenance
 
@@ -76,17 +75,18 @@ Python libraries are __often__ upgraded.
 
 If you want to know which of your libraries are outdated
 ```bash
-$ pip list -o
+$ pip list --outdated
 ```
 and then upgrade them
 ```bash
 $ pip install --upgrade scipy numpy matplotlib
 ```
-
+----
 __Tip:__ `pip` is a Python module on its own and has to be updated as well, through the command
 ```bash
 $ pip install --upgrade pip
 ```
+----
 
 ## PATH and PYTHONPATH
 
