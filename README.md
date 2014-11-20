@@ -51,6 +51,7 @@ The notebooks are divided into two categories
   4. Astropy
   5. Healpy
   6. Optimization
+  7. Documenting
 
 2. Advanced
   1. Testing
