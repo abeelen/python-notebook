@@ -22,22 +22,31 @@ And you will also need several python librairies :
 - healpy     : https://healpy.readthedocs.org/en/latest/install.html
 
 All those packages can be installed using pip like
+```
 > pip install --no-deps healpy
-
+```
 or using your favorite package application, for e.g. under Debian you can install them with 
-
+```
 > sudo apt-get install ipython-notebook python-pip python-numpy python-matplotlib python-astropy
-
+```
 Make sure to have the latest version (especially astropy), we will try to keep those notebook updated
 
 
 You can now clone the notebook with git and use them
 
+```
 > git clone https://git.ias.u-psud.fr/abeelen/python-notebook.git
-
 > cd python-notebook
-
 > ipython notebook
+```
+
+In case of an error, you might need to disable the SSL CERT verification, as IAS does not have a trusted SSL certificate
+```
+> export GIT_SSL_NO_VERIFY=true
+```
+before launching the git clone command.
+
+
 
 
 ## Organization
