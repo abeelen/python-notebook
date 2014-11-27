@@ -19,28 +19,43 @@ For scientific purposes it is better to start with a clean install, or use dedic
 TBD
 
 ### Linux
-TBD
+
+Most distribution provide package to install python. Please refer to your Operating System documentation. Some also provide way to deal with multiple python version installed at the same time.
+
+You could also use a dedicated scientific python environement provided by Canopy  or Anaconda for e.g.
 
 ### OSX
+OSX comes with a default python environement. However, on OSX, it is often better to install a dedicated scientific python environement.
 
-#### Anaconda
+They are different ways to install a python environement on OSX, using package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
+
+* Homebrew
+    
+    Example using Homebrew
+     
+```bash
+    $ brew install python   # version 2.7.X
+    $ brew install python3  # version 3.X.X
+```
+
+* Anaconda or Canopy
+    
+    (See below)
+
+### Anaconda
 
 [Main page](https://store.continuum.io/cshop/anaconda/) | [Quick guide (pdf)](https://store.continuum.io/static/img/Anaconda-Quickstart.pdf)
 
-#### Canopy (previously Enthought Python)
+### Canopy (previously Enthought Python)
 
-[Main page](https://www.enthought.com/products/canopy/)
+[Canopy](https://www.enthought.com/products/canopy/) provide a complete python environement and way to install packages.
 
-#### Source
 
-You can get the version of Python you want directly from the [official site](https://www.python.org/downloads/) or using a package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
+### From Source
 
-Example using Homebrew
-```bash
-$ brew install python   # version 2.7.X
-$ brew install python3  # version 3.X.X
-```
+You can get the version of Python you want directly from the [official site](https://www.python.org/downloads/).
 
+---
 ## Running a Python environment
 
 Enter the program typing `python` in a terminal:
@@ -53,21 +68,26 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 and type in the prompt `quit()`, `exit()` or `Ctrl-D` on your keyboard to exit the program.
 
+---
 
-## Installing libraries/modules
+## Libraries & Modules
 
-Python is usually delivered with [pip](https://pip.pypa.io/en/latest/), a library manager.
+Python as many libraries from numerical calculation to plotting or image processing.
+
+### Installation
+
+Your Operating System usually provide package with the most common python libraries and module. Moreover Python is usually delivered with [pip](https://pip.pypa.io/en/latest/), a library manager.
 
 You can use `pip` to install your libraries (`pip3` for python 3.X) , separating them with a space
 ```bash
 $ pip install scipy numpy matplotlib
 ```
-----
+
 __Tip:__ if you have multiple libraries you need to install, you can list them in a .txt file and have `pip` parse them and install them all at once using the `-r` option, e.g.
 ```bash
 pip install -r requirements.txt
 ```
-----
+
 
 ### Library maintenance
 
@@ -81,18 +101,19 @@ and then upgrade them
 ```bash
 $ pip install --upgrade scipy numpy matplotlib
 ```
-----
+
 __Tip:__ `pip` is a Python module on its own and has to be updated as well, through the command
 ```bash
 $ pip install --upgrade pip
 ```
-----
 
+----
 ## PATH and PYTHONPATH
 
 While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by Python to locate its _libraries_.
 
-### PATH (for OSX / Linux, Windows should be similar but not covered here)
+### PATH (for *nix)
+
 The Python version used by the system is the one that appears __first__ in your `PATH` variable.
 Thus make sure you prepend the path to your (new) python executable to your `.bashrc` as
 
@@ -123,9 +144,7 @@ wherever you are.
 
 ### PYTHONPATH
 
-All the libraries installed using `pip` or your package manager should be symlinked to the right place and made usable directly.
-
-For external libraries, installing them with the command `python setup.py install` symlinks them.
+All the libraries installed using `pip` or your package manager should be installed in standard places, where Python know where to look. For external libraries, installing them with the command `python setup.py install` will copy them at the right place, usualy `/usr/local/lib/`.
 
 However, for your own libraries (even simple scripts), their path needs to be appended to the `PYTHONPATH` variable in the `.bashrc` file
 
