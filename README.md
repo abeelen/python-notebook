@@ -14,6 +14,8 @@ In order to use this notebook, you will need to install first ipython notebook
 
 - http://ipython.org/install.html
 
+You can also read [PythonInstall.md](PythonInstall.md) to know how to install and use python on your system
+
 And you will also need several python librairies : 
 
 - numpy      : http://docs.scipy.org/doc/numpy/user/install.html
