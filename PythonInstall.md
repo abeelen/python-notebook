@@ -15,45 +15,46 @@ and the version of the program can be retrieved using `python --version`.
 The default version is usually the system one and is not easily tunable.
 For scientific purposes it is better to start with a clean install, or use dedicated versions (Anaconda, Canopy) bundled with all the major scientific and plotting libraries.
 
-### Windows
-TBD
-
-### Linux
-
-Most distribution provide package to install python. Please refer to your Operating System documentation. Some also provide way to deal with multiple python version installed at the same time.
-
-You could also use a dedicated scientific python environement provided by Canopy  or Anaconda for e.g.
-
 ### OSX
 OSX comes with a default python environement. However, on OSX, it is often better to install a dedicated scientific python environement.
 
 They are different ways to install a python environement on OSX, using package manager like MacPorts, Fink or [Homebrew](http://brew.sh/) (_recommended_)
 
-* Homebrew
-    
+* **Homebrew**
+
     Example using Homebrew
-     
+
 ```bash
-    $ brew install python   # version 2.7.X
-    $ brew install python3  # version 3.X.X
+$ brew install python   # version 2.7.X
+$ brew install python3  # version 3.4.X
 ```
 
-* Anaconda or Canopy
-    
-    (See below)
+the dedicated scientific environments:
 
-### Anaconda
+* **Anaconda**
 
-[Main page](https://store.continuum.io/cshop/anaconda/) | [Quick guide (pdf)](https://store.continuum.io/static/img/Anaconda-Quickstart.pdf)
-
-### Canopy (previously Enthought Python)
-
-[Canopy](https://www.enthought.com/products/canopy/) provide a complete python environement and way to install packages.
+    [Main page](https://store.continuum.io/cshop/anaconda/) | [Quick guide (pdf)](https://store.continuum.io/static/img/Anaconda-Quickstart.pdf)
 
 
-### From Source
+* **Canopy** (previously Enthought Python)
+
+
+    [Canopy](https://www.enthought.com/products/canopy/) provide a complete python environement and way to install packages.
+
+or from **source**:
+
+* official source
 
 You can get the version of Python you want directly from the [official site](https://www.python.org/downloads/).
+
+### Linux
+
+Most distributions provide a package to install python. Please refer to your Operating System documentation. Some also provide way to deal with multiple python versions installed at the same time.
+
+You could also use a dedicated scientific python environment provided by e.g. Canopy or Anaconda (see OSX).
+
+### Windows
+TBD (or not)
 
 ---
 ## Running a Python environment
@@ -72,13 +73,15 @@ and type in the prompt `quit()`, `exit()` or `Ctrl-D` on your keyboard to exit t
 
 ## Libraries & Modules
 
-Python as many libraries from numerical calculation to plotting or image processing.
+Python has many libraries from numerical calculation to plotting or image processing.
 
 ### Installation
 
 Your Operating System usually provide package with the most common python libraries and module. Moreover Python is usually delivered with [pip](https://pip.pypa.io/en/latest/), a library manager.
 
-You can use `pip` to install your libraries (`pip3` for python 3.X) , separating them with a space
+If you use Anaconda or Canopy Python, they are already shipped with most of the scientific libraries pre-installed. In case the library of your choosing is not installed, please refer to the documentation of these environments for their installation and maintenance.
+
+However for a custom installation of Python you can use `pip` to install your libraries (`pip3` for Python 3.X) , separating them with a space
 ```bash
 $ pip install scipy numpy matplotlib
 ```
@@ -107,7 +110,30 @@ __Tip:__ `pip` is a Python module on its own and has to be updated as well, thro
 $ pip install --upgrade pip
 ```
 
-----
+---
+## IPython / IPython notebook
+
+In order to use Python in an interactive way, IPython must be installed. You can find informations about IPython and its installation on their [website](http://ipython.org/install.html).
+
+IPython provides you with autocompletion, inverse/history search, help in terminal as well as some magic functions.
+
+Once the libraries `numpy` and `matplotlib` have been installed on your computer, running IPython with the `--pylab` option
+```bash
+$ ipython --pylab
+```
+loads all the methods of these two libraries. There is thus no need to import them to create arrays, quickly plot data, etc.
+
+### Notebook
+
+An other great feature of IPython is the [notebook](http://ipython.org/notebook.html) (similar to those of *Mathematica*), a web-based interactive environment where you can combine text, code execution and plots in a single document.
+
+Running in a terminal the command
+```bash
+ipython notebook
+```
+creates a python kernel in the background and opens in a browser a local interface. From there you can interact with notebooks, which are saved as `.ipynb` files.
+
+---
 ## PATH and PYTHONPATH
 
 While the PATH is used by the system shell to locate _executables_, the PYTHONPATH is used by Python to locate its _libraries_.
