@@ -55,6 +55,12 @@ This page provides links to general or specific tutorials about Python or its sc
 
  Everythink you need to know about Git (and more !).
 
- * **GitHub** [[link](https://try.github.io/)]
+ * **Git for scientists**[[link](http://nyuccl.org/pages/GitTutorial/)]
 
- Getting started with GitHub.
+ A basic tutorial with the main commands to quickly get started with a Git workflow.
+
+ * **Git Cheat Sheet** [[link](http://zrusin.blogspot.fr/2007/09/git-cheat-sheet.html)]
+
+ * **GitHub tutorial** [[link](https://try.github.io/)]
+
+ Getting started with GitHub with a interactive tutorial.
