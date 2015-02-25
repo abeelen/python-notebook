@@ -19,15 +19,21 @@ You can also read [PythonInstall.md](PythonInstall.md) to know how to install an
 
 And you will also need several python librairies :
 
+For the Starting tutorials
 - numpy      : http://docs.scipy.org/doc/numpy/user/install.html
 - matplotlib : http://matplotlib.org/1.3.1/users/installing.html
 - astropy    : http://docs.astropy.org/en/stable/install.html
 - healpy     : https://healpy.readthedocs.org/en/latest/install.html
 
+- WCSAxes    : http://wcsaxes.readthedocs.org/
+
+For the Advanced tutorials
+- pytest     : http://pytest.org/
+
 All those packages can be installed using pip like
 
 ```shell
-$ pip install --no-deps healpy
+$ pip install --no-deps healpy wcsaxes
 ```
 
 or using your favorite package application, for e.g. under Debian you can install them with

@@ -90,9 +90,9 @@ For a custom installation of Python you can use `pip` to install your libraries 
 ```bash
 $ pip install scipy numpy matplotlib
 ```
-beware that this will also install all dependancies (like the latest numpy librairies), this can be avoided with
+beware that this will also install all dependancies (like the latest numpy librairies), this can be avoided with then `--no-deps` option : 
 ```bash
-$ pip install scipy numpy matplotlib --no-deps
+$ pip install healpy wcsaxes --no-deps
 ```
 
 __Tip:__ if you have multiple libraries you need to install, you can list them in a .txt file and have `pip` parse them and install them all at once using the `-r` option, e.g.
