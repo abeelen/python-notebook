@@ -77,12 +77,20 @@ Python has many libraries from numerical calculation to plotting or image proces
 
 ### Installation
 
-Your Operating System usually provide package with the most common python libraries and module. You can also find usefull scientific librairies and install them system-wise. For e.g. with an debian based system 
+Your Operating System usually provide package with the most common python libraries and module. You can also find usefull scientific librairies and install them system-wise. For e.g. with an debian based system
 ```bash
 $ apt-get install python-scipy python-numpy python-matplotlib
 ```
-If you use Anaconda or Canopy Python, they are already shipped with most of the scientific libraries pre-installed.
-In case the library of your choosing is not installed, please refer to the documentation of these environments for their installation and maintenance.
+If you use Anaconda the main command-line to upgrade packages is
+```bash
+conda update conda
+conda update *package*
+```
+or Enthought Canopy
+```bash
+enpkg *package*
+```
+or use the integrated GUI to update the desired packages since most scientific libraries are already pre-installed.
 
 Python is usually delivered with [pip](https://pip.pypa.io/en/latest/), a library manager, which can be used when the package you are looking for does not exist in your system packages
 
@@ -90,7 +98,7 @@ For a custom installation of Python you can use `pip` to install your libraries 
 ```bash
 $ pip install scipy numpy matplotlib
 ```
-beware that this will also install all dependancies (like the latest numpy librairies), this can be avoided with then `--no-deps` option : 
+beware that this will also install all dependancies (like the latest numpy librairies), this can be avoided with then `--no-deps` option :
 ```bash
 $ pip install healpy wcsaxes --no-deps
 ```
@@ -113,7 +121,7 @@ and then upgrade them
 ```bash
 $ pip install --upgrade scipy numpy matplotlib
 ```
-beware that if you have installed your Python libraries with system package, you should use your system repositories to update them, for e.g in debian like system : 
+beware that if you have installed your Python libraries with system package, you should use your system repositories to update them, for e.g in debian like system :
 ```bash
 $ apt-get update
 $ apt-get upgrade python-scipy python-numpy python-matplotlib
