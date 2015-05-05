@@ -134,6 +134,27 @@ $ pip install --upgrade pip
 ```
 
 ---
+
+## Recommended libraries for the course
+
+- numpy
+- scipy
+- matplotlib
+- ipython + ipython notebook (*)
+- astropy
+- wcsaxes
+- cython (optional)
+- pytest (optional)
+
+(*) to make sure all the required dependancies are installed as well, if you use `pip` you can use the command
+```bash
+$ pip install --upgrade "ipython[notebook]"
+```
+With Anaconda the command is simply
+```bash
+$ conda update ipython ipython-notebook
+```
+
 ## IPython / IPython notebook
 
 In order to use Python in an interactive way, IPython must be installed. You can find informations about IPython and its installation on their [website](http://ipython.org/install.html).
