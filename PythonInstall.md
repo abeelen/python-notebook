@@ -54,7 +54,8 @@ Most distributions provide a package to install python. Please refer to your Ope
 You could also use a dedicated scientific python environment provided by e.g. Canopy or Anaconda (see OSX).
 
 ### Windows
-TBD (or not)
+
+See **Anaconda** or **Canopy** above.
 
 ---
 ## Running a Python environment
