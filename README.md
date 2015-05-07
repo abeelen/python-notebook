@@ -59,7 +59,11 @@ In case of an error, you might need to disable the SSL CERT verification, as IAS
 $ export GIT_SSL_NO_VERIFY=true
 ```
 
-before launching the `git clone` command.
+before launching the `git clone` command, and then once the cloning is done 
+```shell
+$ git config http.sslVerify false
+```
+
 
 
 ## Organization
