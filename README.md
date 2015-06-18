@@ -7,6 +7,8 @@ These notebooks are meant for you to be able to easily switch to programming in 
 
 ***New*** : All the documentation have been moved to the [wiki](home)
 
+## Notebooks
+
 You can clone these notebooks by using
 
 ```shell
@@ -25,6 +27,8 @@ before launching the `git clone` command, and then once the cloning is done
 ```shell
 $ git config http.sslVerify false
 ```
+
+## Wiki
 
 The wiki pages are accessible with
 
