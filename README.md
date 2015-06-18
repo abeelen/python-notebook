@@ -5,7 +5,7 @@ These IPython notebooks are hosted at https://git.ias.u-psud.fr .
 
 These notebooks are meant for you to be able to easily switch to programming in Python. Therefore, you must have some programming skills before starting, ideally in an high-level language like IDL.
 
-***New*** : All the documentation have been moved to the [wiki](home)
+***New*** : All the documentation have been moved to the [wiki](https://git.ias.u-psud.fr/abeelen/python-notebook/wikis/home)
 
 ## Notebooks
 
