@@ -19,7 +19,7 @@ $ cd python-notebook
 $ ipython notebook
 ```
 
-In case of an error, you might need to disable the SSL CERT verification, as IAS does not have a trusted SSL certificate
+In case of an error, you might need to disable the SSL CERT verification, ~~as IAS does not have a trusted SSL certificate~~
 
 ```shell
 $ export GIT_SSL_NO_VERIFY=true
