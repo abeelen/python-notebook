@@ -7,6 +7,8 @@ These notebooks are meant for you to be able to easily switch to programming in 
 
 ***New*** : All the documentation have been moved to the [wiki](https://git.ias.u-psud.fr/abeelen/python-notebook/wikis/home)
 
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/abeelen/python-notebook)
+
 ## Notebooks
 
 You can clone these notebooks by using
